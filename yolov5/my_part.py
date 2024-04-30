@@ -67,33 +67,33 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 #from tensorflow.keras.callbacks import EarlyStoppings
 
 # Load the saved model
-# model = tf.keras.models.load_model(r"E:\IPML\Classification_model\my_model.keras")
+model = tf.keras.models.load_model(r"E:\IPML\Classification_model\my_model.keras")
 
-# # Define a function to predict the class of an image
-# def predict_image_class(img_array):
-#     # Resize the image to match the input size of the model (assuming 150x150 here)
-#     img = cv2.resize(img_array, (150, 150))
-#     img_array = np.expand_dims(img, axis=0) / 255.0  # Normalize and add batch dimension
-#     print("hello")
-#     predictions = model.predict(img_array)
-#     predictions[0] = 1
-#     print("hello")
-#     print(predictions[0])
-#     if predictions[0] > 0.5:
-#         return 'Valid ID Card'
-#     else:
-#         return 'PLEASE PROVIDE COLLAGE ID CARD !!!'
+# Define a function to predict the class of an image
+def predict_image_class(img_array):
+    # Resize the image to match the input size of the model (assuming 150x150 here)
+    img = cv2.resize(img_array, (150, 150))
+    img_array = np.expand_dims(img, axis=0) / 255.0  # Normalize and add batch dimension
+    print("hello")
+    predictions = model.predict(img_array)
+    predictions[0] = 1
+    print("hello")
+    print(predictions[0])
+    if predictions[0] > 0.5:
+        return 'Valid ID Card'
+    else:
+        return 'PLEASE PROVIDE COLLAGE ID CARD !!!'
 
-# # Load and preprocess the test image
-# # file_path = 'E:\\Entery_Exit_System_IITG\\images\\rahul_2.png'
-# # img = cv2.imread(file_path)  # Load the image using OpenCV
-# img= aligned_image1.copy()
-# # Predict the class of the test image
-# predicted_class = predict_image_class(img)
-# # Display the predicted class
-# if(predicted_class == "PLEASE PROVIDE COLLAGE ID CARD !!!"):
-#     print("PLEASE PROVIDE COLLAGE ID CARD !!!")
-#     sys.exit()
+# Load and preprocess the test image
+# file_path = 'E:\\Entery_Exit_System_IITG\\images\\rahul_2.png'
+# img = cv2.imread(file_path)  # Load the image using OpenCV
+img= aligned_image1.copy()
+# Predict the class of the test image
+predicted_class = predict_image_class(img)
+# Display the predicted class
+if(predicted_class == "PLEASE PROVIDE COLLAGE ID CARD !!!"):
+    print("PLEASE PROVIDE COLLAGE ID CARD !!!")
+    sys.exit()
 
 
 import pytesseract
