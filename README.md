@@ -23,6 +23,8 @@ Installation:
     bash
     git clone https://github.com/Ritikkoshta02/Automated-Entry-Exit-System-using-Image-Processing.git
 
+    also download yolov5 repo from my profile and past yolo folder inside this folder.
+
 Install dependencies:
 
 bash
