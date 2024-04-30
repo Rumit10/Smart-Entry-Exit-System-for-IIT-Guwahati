@@ -1,0 +1,10 @@
+pip install torch
+pip install tensorflow
+pip install pytesseract
+pip install facerecognition
+pip install opencv-python
+pip install matplotlib
+pip install pytesseract
+pip install pandas
+pip install openpyxl
+pip install streamlit
