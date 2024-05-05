@@ -1,7 +1,5 @@
 Automated Entry Exit System for IIT G
 
-[![Automated-Entry-Exit-System-using-Image-Processing](https://img.youtube.com/vi/Yrb1Gqq_jSI&t=94s)](https://www.youtube.com/watch?v=Yrb1Gqq_jSI&t=94s)
-
 Overview:
 
 This project implements an Automated Entry Exit System for IIT G (Indian Institute of Technology, Guwahati) using image processing, face recognition, and text extraction techniques. It provides a seamless and efficient way to manage entry and exit of individuals based on their ID cards.
