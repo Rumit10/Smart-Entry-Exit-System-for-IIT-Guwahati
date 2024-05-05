@@ -1,4 +1,6 @@
 Automated Entry Exit System for IIT G
+https://github.com/Ritikkoshta02/Automated-Entry-Exit-System-using-Image-Processing/assets/78507349/922c02b7-70ad-40f7-8764-7ed7b904e386
+
 
 Overview:
 
